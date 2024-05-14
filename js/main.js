@@ -50,7 +50,7 @@ function sendmail(name,email,msg)
 function emptyerror()
 {
     swal({
-        title: "Bhang kha kr form fill mat kr",
+        title: "Complete All The Sections",
         text: "Fields cant be empty",
         icon: "error",
       });
@@ -58,8 +58,8 @@ function emptyerror()
 function success()
 {
     swal({
-        title: "Email sent succesfully",
-        text: "Keep paticence",
+        title: "Email Sent Succesfully",
+        text: "We will Try To Rspond In 24 Hours",
         icon: "success",
       });
 }
