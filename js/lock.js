@@ -1,12 +1,11 @@
-<script language="JavaScript">
-    <! --hide
-    var password;
-    var pass1="AMIT INSTITUTE";
-    password=prompt('Enter Password To View Page',' ');
-    if (password==pass1)
-    alert('Correct password, click OK to enter.');
-    else{
-        window.location="https://vikashgupta16.github.io/aims/"
+const correctPassword = "Amit Institue"; // Change this to your desired password
+
+function unlockPage() {
+    const passwordInput = document.getElementById("password").value;
+    if (passwordInput === correctPassword) {
+        // Redirect to the unlocked page
+        window.location.href = "physics.html"; // Change "unlocked.html" to the path of your unlocked HTML page
+    } else {
+        alert("Incorrect password. Please try again.");
     }
-    //--> 
-</script>
+}
