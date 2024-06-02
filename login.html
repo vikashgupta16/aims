@@ -57,10 +57,13 @@
     </style>
 </head>
 <body>
-    <h1>Enter Password to Access</h1>
-    <input type="password" id="password" placeholder="Enter password">
-    <button onclick="unlockPage()">Submit</button>
-    
+    <div class="login-container">
+        <h1>Enter Password To Access</h1>
+        <input type="password" id="password" placeholder="Enter password" aria-label="Password">
+        <button onclick="unlockPage()">Submit</button>
+        <div id="error-message"></div>
+    </div>
+
     <script>
         const correctPassword = "Amit Institute"; // Change this to your desired password
 
@@ -83,3 +86,4 @@
     </script>
 </body>
 </html>
+
