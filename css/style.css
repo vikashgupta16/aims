@@ -343,6 +343,31 @@ header {
     font-size: 0.9rem;
 }
 
+/*login*/
+
+.login-data h2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.btn1 {
+    display: flex;
+    width: 100px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    color: var(--bg-color);
+    background: var(--main-color);
+    border-radius: 0.9rem;
+
+}
+
+.btn1 .bx {
+    font-size: 1.2rem;
+}
+
+
 /* review  */
 .reivews {
     max-width: 750px;
