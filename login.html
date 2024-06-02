@@ -27,7 +27,7 @@
             const passwordInput = document.getElementById("password").value;
             if (passwordInput === correctPassword) {
                 sessionStorage.setItem('authenticated', 'true');
-                window.location.href = "landing.html";
+                window.location.href = "subjects.html";
             } else {
                 alert("Incorrect password. Please try again.");
             }
