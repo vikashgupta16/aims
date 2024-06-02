@@ -564,10 +564,6 @@ header {
         font-size: 4rem;
     }
 
-    .subject-box {
-        height: 257px;
-
-    }
 }
 
 @media (max-width:775px) {
@@ -599,10 +595,6 @@ header {
 
     .location-content {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .subject-box {
-        height: 245px;
     }
 
     .menu-icon {
@@ -690,8 +682,7 @@ header {
         margin: 0.6rem;
     }
 
-    .location-content,
-    .subject-content {
+    .location-content {
         grid-template-columns: 1fr;
     }
 
@@ -708,9 +699,5 @@ header {
 @media(max-width:325px) {
     .nav-bar {
         width: 100%;
-    }
-
-    .subject-box {
-        height: 190px;
     }
 }

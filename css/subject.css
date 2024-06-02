@@ -106,3 +106,45 @@ h2 {
     top: 0;
     transition: 0.3s all ease;
 }
+
+/* responsive  */
+@media (max-width:990px) {
+    .container {
+        margin: 0 auto;
+        width: 90%;
+
+    }
+}
+
+@media (max-width:892px) {
+    .heading {
+        font-size: 4rem;
+    }
+
+    .subject-box {
+        height: 257px;
+
+    }
+}
+
+@media (max-width:775px) {
+    .subject-box {
+        height: 245px;
+    }
+}
+
+@media (max-width:450px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    .subject-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:325px) {
+    .subject-box {
+        height: 190px;
+    }
+}
