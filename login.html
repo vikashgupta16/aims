@@ -3,35 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        #password {
-            margin: 10px 0;
-        }
-    </style>
+    <title>Login Form | AIMS</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Enter Password to Access the Website</h1>
-    <input type="password" id="password" placeholder="Enter password">
-    <button onclick="unlockPage()">Submit</button>
-    
-    <script>
-        const correctPassword = "Amit Institute";
-
-        function unlockPage() {
-            const passwordInput = document.getElementById("password").value;
-            if (passwordInput === correctPassword) {
-                sessionStorage.setItem('authenticated', 'true');
-                window.location.href = "landing.html";
-            } else {
-                alert("Incorrect password. Please try again.");
-            }
-        }
-    </script>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Rembember Me</label>
+                <a href="#">Ask Sir For Password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
 </body>
 </html>
