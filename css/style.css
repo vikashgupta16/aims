@@ -530,7 +530,6 @@ header {
     color: var(--bg-color);
     background: var(--box-color);
     border-radius: 0.2rem;
-
 }
 
 .scroll-top .bx:hover {
@@ -541,7 +540,6 @@ header {
 .scroll-active {
     bottom: 2rem;
     transition: 0.3s;
-
 }
 
 /* responsive  */
