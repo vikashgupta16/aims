@@ -345,11 +345,12 @@ header {
 
 /*login*/
 
-.login-data h2 {
+.login-data h3 {
+    text-align: center;
     font-size: 2rem;
     line-height: 2.6rem;
-    font-weight: 700;
-    margin: 1rem 0;
+    font-weight: 400;
+    margin: 0 auto;
 }
 
 .btn1 {
@@ -360,7 +361,7 @@ header {
     color: var(--bg-color);
     background: var(--main-color);
     border-radius: 0.9rem;
-
+    margin-top: 2rem;
 }
 
 .btn1 .bx {
