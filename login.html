@@ -8,29 +8,34 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 70px;
+            margin: 0;
+            padding: 0;
             background-image: url('img/pexels-asadphoto-3293148.jpg'); /* Add your background image here */
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             flex-direction: column;
-            backdrop-filter: blur(1px);
         }
         .login-container {
             background: rgba(0, 0, 0, 0.5);
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 400px;
+            margin: 0 10px;
         }
         #password {
             margin: 10px 0;
             padding: 10px;
             border: none;
             border-radius: 5px;
-            width: 80%;
+            width: calc(100% - 22px);
         }
         button {
             padding: 10px 20px;
@@ -40,6 +45,7 @@
             color: white;
             font-size: 16px;
             cursor: pointer;
+            width: calc(100% - 22px);
         }
         button:hover {
             background-color: #45a049;
