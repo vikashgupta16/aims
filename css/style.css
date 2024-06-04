@@ -343,9 +343,9 @@ header {
     font-size: 0.9rem;
 }
 
-/*login*/
+/*class*/
 
-.login-data h3 {
+.class-data h3 {
     text-align: center;
     font-size: 2rem;
     line-height: 2.6rem;
@@ -362,6 +362,7 @@ header {
     background: var(--main-color);
     border-radius: 0.9rem;
     margin-top: 2rem;
+    column-gap: 0.5rem;
 }
 
 .btn1 .bx {
