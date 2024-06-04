@@ -80,6 +80,38 @@ h2 {
 
 }
 
-.class-box p {
+.class-box a {
     font-size: 0.9rem;
+    color: #fff;
+}
+
+@media (max-width:990px) {
+    .container {
+        margin: 0 auto;
+        width: 90%;
+
+    }
+}
+
+@media (max-width:892px) {
+    section {
+        padding: 2rem 0;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width:775px) {
+    .class-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:450px) {
+    .class-content {
+        grid-template-columns: 1fr;
+    }
 }
