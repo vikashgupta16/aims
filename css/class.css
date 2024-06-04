@@ -79,3 +79,7 @@ h2 {
     color: var(--main-color);
 
 }
+
+.class-box p {
+    font-size: 0.9rem;
+}
