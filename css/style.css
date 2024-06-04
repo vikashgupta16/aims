@@ -357,6 +357,7 @@ header {
     display: flex;
     width: 100px;
     margin: 0 auto;
+    align-items: center;
     padding: 12px 16px;
     color: var(--bg-color);
     background: var(--main-color);
