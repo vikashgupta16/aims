@@ -12,12 +12,23 @@
     --body-alter-color: #0b0f1b;
     --container-color: #171b3c;
     --text-color: #fff;
+    --heading-color: #222231;
 }
 
 body {
     color: var(--text-color);
     background: var(--body-color);
 }
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--heading-color);
+}
+
 
 .container {
     min-height: 100vh;
