@@ -23,6 +23,15 @@ body {
     background: var(--body-color);
 }
 
+html::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--heading-color);
+}
+
 h2 {
     display: block;
     font-size: 1.5em;
