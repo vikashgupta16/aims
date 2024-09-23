@@ -26,13 +26,10 @@ body {
 html::-webkit-scrollbar {
     width: 0.5rem;
     background: transparent;
-
 }
 
 html::-webkit-scrollbar-thumb {
-
     background: var(--heading-color);
-
 }
 
 img {
@@ -45,7 +42,6 @@ section {
 
 a {
     text-decoration: none;
-
 }
 
 li {
@@ -161,7 +157,6 @@ header {
     background: #98a7fc;
     overflow: hidden;
     margin-bottom: 2rem;
-
 }
 
 .home-img {
@@ -169,7 +164,6 @@ header {
     height: 180px;
     object-fit: cover;
     object-position: center;
-
 }
 
 .home-text {
@@ -320,7 +314,6 @@ header {
 .location-box:hover {
     transform: scale(1.05);
     transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
 
 .location-box .bx {
@@ -445,7 +438,6 @@ header {
 .swiper-pagination-bullet-active {
     width: 1.5rem !important;
     background: var(--main-color) !important;
-
 }
 
 .contact-form {
@@ -454,7 +446,6 @@ header {
     width: 100%;
     display: grid;
     row-gap: 1rem;
-
 }
 
 .contact-form input,
@@ -497,22 +488,18 @@ header {
 
 .footer p {
     font-size: 0.9rem;
-
 }
 
 .footer-links {
     display: flex;
     align-items: center;
     column-gap: 1rem;
-
-
 }
 
 .footer-links a {
     font-size: 1rem;
     font-weight: 400;
     color: var(--bg-color);
-
 }
 
 .footer-links a:hover {
@@ -524,7 +511,6 @@ header {
     position: fixed;
     bottom: -100%;
     right: 1.5rem;
-
 }
 
 .scroll-top .bx {
@@ -550,7 +536,6 @@ header {
     .container {
         margin: 0 auto;
         width: 90%;
-
     }
 }
 
@@ -573,18 +558,15 @@ header {
 
     .logo {
         font-size: 1.1rem;
-
     }
 
     .home {
         min-height: 500px;
         padding-top: 6rem;
-
     }
 
     .home-text h3 {
         font-size: 1rem;
-
     }
 
     .home-text h2 {
@@ -626,7 +608,6 @@ header {
     .nav-link {
         display: block;
         margin: 1rem 0;
-
     }
 }
 
@@ -661,18 +642,15 @@ header {
     .home-img {
         width: 140px;
         height: 140px;
-
     }
 
     .home-text h2 {
         font-size: 2.1rem;
         line-height: 3.2rem;
-
     }
 
     .home-text p br {
         display: contents;
-
     }
 
     .heading {
