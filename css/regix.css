@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom right, #a8edea, #fed6e3);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Enrollment Section */
+  .enrollment-section {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  .enrollment-section header {
+    margin-bottom: 20px;
+  }
+  
+  header .AIMS-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 5px;
+  }
+  
+  header p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Form Fields */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    border: 1px solid #007BFF;
+    outline: none;
+  }
+  
+  /* Submit Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #007BFF, #00D2FF);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #0056b3, #009bcc);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .enrollment-section {
+      padding: 15px;
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
