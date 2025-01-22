@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Form</title>
+  <link rel="stylesheet" href="css/regix.css">
+</head>
+<body>
+  <section class="enrollment-section">
+    <div class="form-container">
+      <header>
+        <img src="img/image.png" alt="AIMS" class="AIMS-img">
+        <h1>Welcome to AIMS Enrollment</h1>
+        <p>Join us today and unlock your potential!</p>
+      </header>
+      <form id="enrollmentForm">
+        <div class="form-group">
+          <label for="name">Student's Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label for="studentImage">Upload Student's Photo</label>
+          <input type="file" id="studentImage" name="studentImage" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+          <label for="fatherName">Father's Name</label>
+          <input type="text" id="fatherName" name="fatherName" placeholder="Enter your father's name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Schoolname">School</label>
+          <input type="text" id="Schoolname" name="Schoolname" placeholder="Enter your School name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Subject">Preferred Subject's</label>
+          <input type="text" id="SubjectName" name="SubjectName" placeholder="Enter your Subject's" required>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Preferred Batch</label>
+          <select id="location" name="Preferred Batch" required>
+            <option value="">Select your Batch</option>
+            <option value="Hindmotor">Hindmotor</option>
+            <option value="Uttarpara">Uttarpara</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="School Board">School Board</label>
+          <select id="School Board" name="School Board" required>
+            <option value="">Select your Board</option>
+            <option value="ICSE">ICSE</option>
+            <option value="CBSE">CBSE</option>
+            <option value="ISC">ISC</option>
+            <option value="WBBSE">WBBSE</option>
+            <option value="WBCHSE">WBCHSE</option>
+            <option value="OTHERS">OTHER'S</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="class">Class</label>
+          <select id="class" name="class" required>
+            <option value="">Select your class</option>
+            <option value="6th">6th</option>
+            <option value="7th">7th</option>
+            <option value="8th">8th</option>
+            <option value="9th">9th</option>
+            <option value="10th">10th</option>
+            <option value="11th">11th</option>
+            <option value="12th">12th</option>
+            <option value="Undergraduate">Undergraduate</option>
+          </select>
+        </div>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS
+    (function() {
+      emailjs.init('nxx1efk_lLYl0Hhp1'); // Replace with your EmailJS user ID
+    })();
+
+    // Form submission
+    document.getElementById('enrollmentForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('service_1bnnevh', 'template_4tu3ijy', this)
+        .then(function() {
+          alert('Form submitted successfully!');
+        }, function(error) {
+          alert('Failed to submit form, please try again later.');
+        });
+    });
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/regix.js"></script>
+</body>
+</html>
