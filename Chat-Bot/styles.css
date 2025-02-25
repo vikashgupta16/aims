@@ -1,0 +1,172 @@
+/* Import the same font as the main website */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Ensure chatbot styles do NOT affect the main website */
+#chat-wrapper,
+#chat-bubble {
+  all: unset;
+}
+
+/* Root Variables (Matching the Website) */
+:root {
+  --chat-main-color: #647bff;
+  --chat-bg-color: #090a1a;
+  --chat-container-color: #171b3c;
+  --chat-text-color: #fff;
+  --chat-border-color: #647bff;
+}
+
+/* Chat Bubble */
+#chat-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: var(--chat-main-color);
+  color: var(--chat-text-color);
+  font-size: 26px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transition: background 0.3s;
+}
+
+#chat-bubble:hover {
+  background: #546eff;
+}
+
+/* Chat Window */
+#chat-wrapper {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  max-width: 90%;
+  background: var(--chat-container-color);
+  color: var(--chat-text-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* Chat Messages */
+#chat-container {
+  height: 300px;
+  overflow-y: auto;
+  padding: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Custom Scrollbar for Chatbot */
+#chat-container::-webkit-scrollbar {
+  width: 6px;
+  /* Slim and modern */
+}
+
+#chat-container::-webkit-scrollbar-track {
+  background: var(--chat-container-color);
+  /* Match chatbot background */
+  border-radius: 10px;
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+  background: var(--chat-main-color);
+  /* Match main site color */
+  border-radius: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+#chat-container::-webkit-scrollbar-thumb:hover {
+  background: #546eff;
+  /* Slightly lighter shade on hover */
+}
+
+/* Chat Messages (User & Assistant) */
+#chat-wrapper .message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 15px;
+  max-width: 80%;
+  font-size: 0.94rem;
+}
+
+/* User Message */
+#chat-wrapper .user-message {
+  background: var(--chat-main-color);
+  color: white;
+  text-align: right;
+  align-self: flex-end;
+}
+
+/* Assistant Message */
+#chat-wrapper .assistant-message {
+  background: #1e2252;
+  color: white;
+  align-self: flex-start;
+}
+
+/* Input Box */
+#input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid var(--chat-border-color);
+  background: var(--chat-container-color);
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--chat-border-color);
+  border-radius: 20px;
+  background: var(--chat-bg-color);
+  color: var(--chat-text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+#btn {
+  padding: 10px 14px;
+  background: var(--chat-main-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s;
+}
+
+#btn:hover {
+  background: #546eff;
+}
+
+/* Predefined Chat Options */
+#suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  background: var(--chat-container-color);
+}
+
+.suggestion-btn {
+  background: var(--chat-main-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.3s;
+}
+
+.suggestion-btn:hover {
+  background: #546eff;
+}
