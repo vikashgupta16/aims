@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Chat-Bot/styles.css">
 </head>
 
 <body>
@@ -325,6 +326,16 @@
             <input type="submit" value="Send" class="send-btn">
         </form>
     </section>
+     <!-- Chatbot Integration -->
+     <div id="chat-bubble">💬</div>
+     <div id="chat-wrapper">
+         <div id="chat-container"></div>
+         <div id="suggestions"></div>
+         <div id="input-container">
+             <input type="text" id="message-input" placeholder="How can I help you?">
+             <button id="btn">Send</button>
+         </div>
+     </div>
     <!-- footer  -->
     <section class="footer container" id="footer">
         <div class="social">
@@ -356,5 +367,6 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!-- link to js -->
     <script src="js/main.js"></script>
+    <script src="Chat-Bot/script.js" defer></script>
 </body>
 </html>
