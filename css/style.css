@@ -278,6 +278,47 @@ header {
     margin-top: 1rem;
 }
 
+
+.lab {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.lab-text {
+    margin-bottom: 20px;
+}
+
+
+.lab .swiper {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.lab .swiper-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;  /* Ensures full image is visible */
+    border-radius: 15px;
+    background-color: #1e25504b;  /* Adds a background if images are smaller */
+}
+
+#chat-label {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #647bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
 .btn .bx {
     font-size: 1.2rem;
 }
