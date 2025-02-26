@@ -63,6 +63,38 @@ function success()
         icon: "success",
       });
 }
+//lab swiper
+var swiperLab = new Swiper(".lab .swiper", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+//show need help when scrolled
+window.addEventListener("scroll", function () {
+    let chatLabel = document.getElementById("chat-label");
+    let chatBubble = document.getElementById("chat-bubble");
+
+    if (window.scrollY > 100) {  // Show when scrolled 100px
+        chatLabel.style.display = "block";
+        chatBubble.style.display = "block";
+    } else {
+        chatLabel.style.display = "none";
+        chatBubble.style.display = "none";
+    }
+});
+
+
 // header backgrond change on scroll 
 let header = document.querySelector("header");
 window.addEventListener("scroll", () => {
